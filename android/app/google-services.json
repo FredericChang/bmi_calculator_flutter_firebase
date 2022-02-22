@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254184366784",
+    "project_id": "bmi2-4719a",
+    "storage_bucket": "bmi2-4719a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254184366784:android:824af7d51556ee84aac325",
+        "android_client_info": {
+          "package_name": "com.example.bmi_calculator_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254184366784-rhcbdt4oka0rvg4kp5aab3po85gvu280.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMGpm57NHAm-OISj7TD1vaH48ZGtRJYnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254184366784-rhcbdt4oka0rvg4kp5aab3po85gvu280.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
