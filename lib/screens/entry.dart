@@ -1,7 +1,12 @@
 import 'package:bmi_calculator_flutter/src/app.dart';
 import 'package:flutter/material.dart';
+import 'package:bmi_calculator_flutter/src/models/entry.dart';
+import 'package:flutter/foundation.dart';
 
 class EntryScreen extends StatelessWidget {
+
+  final Entry entry;
+  EntryScreen({required this.entry});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +20,37 @@ class EntryScreen extends StatelessWidget {
               print(value);
             });
           },),
-      ],
-
+        ],
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'DailyEntry',
+                border: InputBorder.none,
+              ),
+              maxLines: 12,
+              minLines: 10,
+            ),
+            RaisedButton(
+              color: Colors.teal,
+              child: Text('Save',
+                style: TextStyle(color: Colors.pink[200]),
+              ),
+              onPressed: (){},
+            ),
+            (entry.entryId != '') ? RaisedButton(
+              color: Colors.red,
+              child: Text('Delete',
+                style: TextStyle(color: Colors.pink[200]),
+              ),
+              onPressed: (){},
+            ):Container(),
+          ],
+        ),
+      )
     );
   }
 
